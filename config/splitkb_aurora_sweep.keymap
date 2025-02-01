@@ -4,10 +4,10 @@
 
 &mt {
   flavor = "tap-preferred";
-  tapping-term-ms = <50>;
+  tapping-term-ms = <100>;
 };
 &lt {
-  tapping-term-ms = <50>;
+  tapping-term-ms = <100>;
 };
 / {
     combos {
@@ -24,7 +24,7 @@
         };
   };
         conditional_layers {
-          compatible = "zmk,conditional-layers"
+          compatible = "zmk,conditional-layers";
           tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
@@ -51,7 +51,7 @@
         };
         left_layer {
           bindings = <
-            &kp F1    &kp F2 &kp F3  &kp F4  &kp F5          &F8         &F9          &F10         &kp F11    &kp F12
+            &kp F1    &kp F2 &kp F3  &kp F4  &kp F5          &kp F8         &kp F9          &kp F10         &kp F11    &kp F12
             &kp ESC   &none  &none   &none   &none           &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT  &kp BSPC
             &kp TAB   &none  &none   &none   &none           &kp K_PREV  &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT &kp K_PLAY_PAUSE
                                    &kp LMETA &lt 2 RET       &lt 1 SPACE &kp LALT

@@ -4,10 +4,11 @@
 
 &mt {
   flavor = "tap-preferred";
-  tapping-term-ms = <130>;
+  tapping-term-ms = <110>;
 };
 &lt {
-  tapping-term-ms = <130>;
+  flavor = "tap-preferred";
+  tapping-term-ms = <110>;
 };
 / {
     macros {
@@ -24,6 +25,13 @@
         wait-ms = <1>;
         tap-ms = <1>;
         bindings = <&kp COLON &kp W &kp Q>;
+      };
+      vim_q: macro_vim_q {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <1>;
+        tap-ms = <1>;
+        bindings = <&kp COLON &kp Q &kp EXCL>;
       };
     };
     combos {
@@ -48,7 +56,14 @@
             key-positions = <1 19>;
             bindings = <&vim_w>;
         };
-        combo_write_quit {
+
+        combo_vim_quit {
+            timeout-ms = <50>;
+            key-positions = <0 19>;
+            bindings = <&vim_q>
+        };
+
+        combo_vim_write_quit {
             timeout-ms = <50>;
             key-positions = <0 1 19>;
             bindings = <&vim_wq>;

@@ -60,7 +60,7 @@
         combo_vim_quit {
             timeout-ms = <50>;
             key-positions = <0 19>;
-            bindings = <&vim_q>
+            bindings = <&vim_q>;
         };
 
         combo_vim_write_quit {

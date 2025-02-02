@@ -3,11 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  flavor = "tap-unless-interrupted";
+  flavor = "tap-preferred";
   tapping-term-ms = <180>;
 };
 &lt {
-  flavor = "tap-unless-interrupted";
+  flavor = "tap-preferred";
   tapping-term-ms = <180>;
 };
 / {
@@ -82,15 +82,15 @@
         default_layer {
           bindings = <
             &kp Q        &kp W &kp E &kp R &kp T       &kp Y &kp U  &kp I     &kp O   &kp P
-            &mt LSHIFT A &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K     &kp L   &mt LSHIFT SEMI
-            &mt LCTRL Z  &kp X &kp C &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT &mt LCTRL SLASH
+          &kp A &kp S &kp D &kp F &kp G       &kp H &kp J  &kp K     &kp L   &mt LSHIFT SEMI
+            &kp Z  &kp X &kp C &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT &mt LCTRL SLASH
                                  &kp LMETA &lt 2 RET   &lt 1 SPACE  &kp LALT
           >;
         };
         right_layer {
           bindings = <
             &kp N1    &kp N2 &kp N3   &kp N4    &kp N5       &kp N6      &kp N7   &kp N8   &kp N9    &kp N0
-            &mt LSHIFT EXCL  &kp AT &kp HASH &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS &kp STAR &kp EQUAL &mt LSHIFT SQT
+            &kp EXCL  &kp AT &kp HASH &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS &kp STAR &kp EQUAL &mt LSHIFT SQT
             &kp GRAVE &none  &none    &kp MINUS     &none    &none   &kp UNDER    &trans    &trans     &kp BSLH
                                       &kp LMETA &lt 2 RET    &lt 1 SPACE &kp LALT
             >;
@@ -98,8 +98,8 @@
         left_layer {
           bindings = <
             &trans    &kp F1  &kp F2  &kp F3  &kp F4               &trans  &trans  &trans  &trans        &kp BSPC
-            &trans    &kp F5  &kp F6   &kp F7   &kp F8              &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT  &kp DEL
-            &none     &kp F9  &kp F10   &kp F11   &kp F12             &kp K_PREV  &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT &kp K_PLAY_PAUSE
+            &kp LSHIFT    &kp F5  &kp F6   &kp F7   &kp F8              &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT  &kp DEL
+            &kp LCTRL     &kp F9  &kp F10   &kp F11   &kp F12             &kp K_PREV  &kp K_VOL_DN &kp K_VOL_UP &kp K_NEXT &kp K_PLAY_PAUSE
                                    &kp LMETA &lt 2 RET              &lt 1 SPACE &kp LALT
           >;
         };

@@ -3,11 +3,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 &mt {
-  flavor = "tap-preferred";
+  flavor = "tap-unless-interrupted";
   tapping-term-ms = <180>;
 };
 &lt {
-  flavor = "tap-preferred";
+  flavor = "tap-unless-interrupted";
   tapping-term-ms = <180>;
 };
 / {

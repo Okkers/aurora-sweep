@@ -4,11 +4,11 @@
 
 &mt {
   flavor = "tap-preferred";
-  tapping-term-ms = <140>;
+  tapping-term-ms = <180>;
 };
 &lt {
   flavor = "tap-preferred";
-  tapping-term-ms = <140>;
+  tapping-term-ms = <180>;
 };
 / {
     macros {

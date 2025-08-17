@@ -106,7 +106,7 @@
         combo_layer {
           bindings = <
             &trans  &trans &trans &trans &trans          &trans      &kp LBKT   &kp RBKT   &trans &trans
-            &trans  &trans &trans &trans &trans          &trans      &kp LPAR   &kp RPAR   &trans &kp LBKT
+            &trans  &trans &trans &trans &trans          &trans      &kp LPAR   &kp RPAR   &trans &trans
             &trans  &trans &trans &trans &trans          &trans      &kp LBRC   &kp RBRC   &trans &trans
                                 &kp LALT &lt 2 RET       &lt 1 SPACE &kp LMETA
           >;
